@@ -147,7 +147,7 @@ jobs:
           # uvx gives Drafter its own disposable environment. If the student's
           # project has requirements.txt, layer those packages into the same
           # environment so imports needed while compiling can succeed.
-          DRAFTER_RUN=(uvx --from "$DRAFTER_SPEC")
+          DRAFTER_RUN=(uvx --from "$DRAFTER_SPEC" --with requests)
           if [[ -f requirements.txt ]]; then
             # The workflow controls the Drafter major version. Ignore any
             # Drafter pin in a legacy requirements.txt, but preserve the
