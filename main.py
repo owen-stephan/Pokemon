@@ -3,6 +3,17 @@ from dataclasses import dataclass
 import requests
 import random
 
+set_website_title("Pokemon academy")
+set_site_information(
+    author="Owen Stephan",
+    description="allows you to test your pokemon knowledge and search a pokedex",
+    sources="Thanks to the Drafter docs and my study group.",
+    planning=[""],
+    links=[""]
+)
+hide_debug_information()
+set_website_framed(False)
+
 hide_debug_information()
 set_website_title("Your Drafter Website")
 set_website_framed(False)
